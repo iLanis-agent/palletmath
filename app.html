@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pallet Math - app</title>
+<style>
+  :root { --accent:#7a5c2e; --ink:#221c12; --paper:#f7f5f1; --soft:#ece4d4; }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family:Georgia, "Times New Roman", serif; background:var(--paper); color:var(--ink); line-height:1.55; }
+  main { max-width:660px; margin:0 auto; }
+  .boundary { background:#fdeaea; border-left:6px solid #b03030; color:#5c1c1c; border-radius:6px; padding:1rem 1.1rem; }
+  .boundary strong { display:block; margin-bottom:.3rem; }
+  body { padding:2rem 1.2rem; }
+  h1 { font-size:1.8rem; color:var(--accent); }
+  .boundary { margin:1rem 0 1.4rem; }
+  .panel { background:var(--soft); border-left:5px solid var(--accent); border-radius:6px; padding:1rem 1.1rem; margin-bottom:1.1rem; }
+  h2 { font-size:1.1rem; margin-bottom:.6rem; }
+  p.note { font-size:.9rem; margin-bottom:.4rem; }
+  label { display:block; font-size:.9rem; margin:.45rem 0 .1rem; }
+  input { width:100%; padding:.45rem .55rem; font-size:1rem; border:1px solid #c2ae8a; border-radius:6px; background:#fff; color:var(--ink); }
+  .row2 { display:grid; grid-template-columns:1fr 1fr; gap:.6rem; }
+  .out { margin-top:.7rem; font-size:.98rem; background:#fff; border:1px dashed #c2ae8a; border-radius:6px; padding:.6rem .7rem; min-height:2.4rem; overflow-wrap:anywhere; }
+  .out.err { border-color:#b03030; color:#8a1f1f; }
+  footer { margin-top:1.8rem; font-size:.85rem; color:#7d6c4e; }
+  a { color:var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Pallet Math</h1>
+  <div class="boundary">
+    <strong>Boundary: arithmetic only</strong>
+    This page counts flat grid packing with floor division: boxes per layer in the better of two orientations, layers in a stack height, the box total and the load weight. The pallet, box and stack numbers are yours to measure or read off your own shipping note. It applies the counting as written, so it has not seen your load and does not know the overhang rules, the interlock pattern, the wrap, the pallet's condition or its rated capacity, and it gives no verdict that a stack travels safely. Every number here is your own entry.
+  </div>
+
+  <div class="panel">
+    <h2>The layer truth</h2>
+    <p class="note">Boxes per layer: both flat orientations counted, the better one kept.</p>
+    <div class="row2">
+      <div><label for="y-pl">Pallet length (mm)</label><input id="y-pl" type="text" value="1200"></div>
+      <div><label for="y-pw">Pallet width (mm)</label><input id="y-pw" type="text" value="1000"></div>
+    </div>
+    <div class="row2">
+      <div><label for="y-bl">Box length (mm)</label><input id="y-bl" type="text" value="500"></div>
+      <div><label for="y-bw">Box width (mm)</label><input id="y-bw" type="text" value="400"></div>
+    </div>
+    <div class="out" id="y-out"></div>
+  </div>
+
+  <div class="panel">
+    <h2>The stack truth</h2>
+    <p class="note">Layers in a stack height: floor division, nothing rounded up.</p>
+    <div class="row2">
+      <div><label for="s-h">Stack height (mm)</label><input id="s-h" type="text" value="1800"></div>
+      <div><label for="s-b">Box height (mm)</label><input id="s-b" type="text" value="300"></div>
+    </div>
+    <div class="out" id="s-out"></div>
+  </div>
+
+  <div class="panel">
+    <h2>The total truth</h2>
+    <p class="note">The pallet's boxes: per layer times layers.</p>
+    <div class="row2">
+      <div><label for="t-p">Boxes per layer</label><input id="t-p" type="text" value="6"></div>
+      <div><label for="t-l">Layers</label><input id="t-l" type="text" value="6"></div>
+    </div>
+    <div class="out" id="t-out"></div>
+  </div>
+
+  <div class="panel">
+    <h2>The weight truth</h2>
+    <p class="note">The load weight: box count times box weight.</p>
+    <div class="row2">
+      <div><label for="w-t">Boxes</label><input id="w-t" type="text" value="36"></div>
+      <div><label for="w-k">Box weight (kg)</label><input id="w-k" type="text" value="12.5"></div>
+    </div>
+    <div class="out" id="w-out"></div>
+  </div>
+
+  <footer>Pallet Math is exact arithmetic over the numbers you enter. <a href="index.html">Why it exists</a>.</footer>
+</main>
+<script src="engine.js"></script>
+<script>
+  function show(id, fn) {
+    const out = document.getElementById(id);
+    try { out.textContent = fn(); out.classList.remove("err"); }
+    catch (e) { out.textContent = e.message; out.classList.add("err"); }
+  }
+  function recalc() {
+    const v = (id) => document.getElementById(id).value;
+    show("y-out", () => layerTruth(v("y-pl"), v("y-pw"), v("y-bl"), v("y-bw")));
+    show("s-out", () => layersTruth(v("s-h"), v("s-b")));
+    show("t-out", () => totalTruth(v("t-p"), v("t-l")));
+    show("w-out", () => weightTruth(v("w-t"), v("w-k")));
+  }
+  document.querySelectorAll("input").forEach((el) => {
+    el.addEventListener("input", recalc);
+    el.addEventListener("change", recalc);
+  });
+  recalc();
+</script>
+</body>
+</html>
