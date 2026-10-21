@@ -1,0 +1,902 @@
+{
+ "cases": [
+  {
+   "fn": "layer",
+   "args": [
+    "1200",
+    "1000",
+    "500",
+    "400"
+   ],
+   "expect": "The layer of 1200 mm by 1000 mm with boxes of 500 mm by 400 mm holds 6 boxes in the better orientation."
+  },
+  {
+   "fn": "layers",
+   "args": [
+    "1800",
+    "300"
+   ],
+   "expect": "The stack of 1800 mm over boxes of 300 mm tall takes 6 layers."
+  },
+  {
+   "fn": "total",
+   "args": [
+    "6",
+    "6"
+   ],
+   "expect": "The pallet of 6 boxes per layer over 6 layers holds 36 boxes."
+  },
+  {
+   "fn": "weight",
+   "args": [
+    "36",
+    "12.5"
+   ],
+   "expect": "The load of 36 boxes at 12.5 kg each weighs 450 kg."
+  },
+  {
+   "fn": "layer",
+   "args": [
+    "91765",
+    "37230",
+    "76439",
+    "5331"
+   ],
+   "expect": "The layer of 91765 mm by 37230 mm with boxes of 76439 mm by 5331 mm holds 6 boxes in the better orientation."
+  },
+  {
+   "fn": "layer",
+   "args": [
+    "69628",
+    "99644",
+    "16730",
+    "37980"
+   ],
+   "expect": "The layer of 69628 mm by 99644 mm with boxes of 16730 mm by 37980 mm holds 8 boxes in the better orientation."
+  },
+  {
+   "fn": "layer",
+   "args": [
+    "86773",
+    "46836",
+    "1019",
+    "70314"
+   ],
+   "expect": "The layer of 86773 mm by 46836 mm with boxes of 1019 mm by 70314 mm holds 45 boxes in the better orientation."
+  },
+  {
+   "fn": "layer",
+   "args": [
+    "62708",
+    "57422",
+    "15867",
+    "20427"
+   ],
+   "expect": "The layer of 62708 mm by 57422 mm with boxes of 15867 mm by 20427 mm holds 9 boxes in the better orientation."
+  },
+  {
+   "fn": "layer",
+   "args": [
+    "83911",
+    "92534",
+    "56336",
+    "71743"
+   ],
+   "expect": "The layer of 83911 mm by 92534 mm with boxes of 56336 mm by 71743 mm holds 1 boxes in the better orientation."
+  },
+  {
+   "fn": "layer",
+   "args": [
+    "93731",
+    "9616",
+    "6774",
+    "42019"
+   ],
+   "expect": "The layer of 93731 mm by 9616 mm with boxes of 6774 mm by 42019 mm holds 2 boxes in the better orientation."
+  },
+  {
+   "fn": "layer",
+   "args": [
+    "60553",
+    "44260",
+    "29809",
+    "45990"
+   ],
+   "expect": "The layer of 60553 mm by 44260 mm with boxes of 29809 mm by 45990 mm holds 1 boxes in the better orientation."
+  },
+  {
+   "fn": "layer",
+   "args": [
+    "71578",
+    "15687",
+    "30330",
+    "5273"
+   ],
+   "expect": "The layer of 71578 mm by 15687 mm with boxes of 30330 mm by 5273 mm holds 4 boxes in the better orientation."
+  },
+  {
+   "fn": "layer",
+   "args": [
+    "41693",
+    "64025",
+    "53663",
+    "24330"
+   ],
+   "expect": "The layer of 41693 mm by 64025 mm with boxes of 53663 mm by 24330 mm holds 1 boxes in the better orientation."
+  },
+  {
+   "fn": "layer",
+   "args": [
+    "68854",
+    "54150",
+    "30755",
+    "6701"
+   ],
+   "expect": "The layer of 68854 mm by 54150 mm with boxes of 30755 mm by 6701 mm holds 16 boxes in the better orientation."
+  },
+  {
+   "fn": "layer",
+   "args": [
+    "92149",
+    "95316",
+    "36473",
+    "19317"
+   ],
+   "expect": "The layer of 92149 mm by 95316 mm with boxes of 36473 mm by 19317 mm holds 8 boxes in the better orientation."
+  },
+  {
+   "fn": "layer",
+   "args": [
+    "59078",
+    "76236",
+    "34529",
+    "63448"
+   ],
+   "expect": "The layer of 59078 mm by 76236 mm with boxes of 34529 mm by 63448 mm holds 1 boxes in the better orientation."
+  },
+  {
+   "fn": "layer",
+   "args": [
+    "73916",
+    "42737",
+    "10585",
+    "38964"
+   ],
+   "expect": "The layer of 73916 mm by 42737 mm with boxes of 10585 mm by 38964 mm holds 6 boxes in the better orientation."
+  },
+  {
+   "fn": "layer",
+   "args": [
+    "95782",
+    "82885",
+    "63927",
+    "51531"
+   ],
+   "expect": "The layer of 95782 mm by 82885 mm with boxes of 63927 mm by 51531 mm holds 1 boxes in the better orientation."
+  },
+  {
+   "fn": "layer",
+   "args": [
+    "26518",
+    "48175",
+    "20025",
+    "12876"
+   ],
+   "expect": "The layer of 26518 mm by 48175 mm with boxes of 20025 mm by 12876 mm holds 4 boxes in the better orientation."
+  },
+  {
+   "fn": "layer",
+   "args": [
+    "77664",
+    "35274",
+    "30732",
+    "44250"
+   ],
+   "expect": "The layer of 77664 mm by 35274 mm with boxes of 30732 mm by 44250 mm holds 1 boxes in the better orientation."
+  },
+  {
+   "fn": "layer",
+   "args": [
+    "87605",
+    "35732",
+    "34623",
+    "37311"
+   ],
+   "expect": "The layer of 87605 mm by 35732 mm with boxes of 34623 mm by 37311 mm holds 2 boxes in the better orientation."
+  },
+  {
+   "fn": "layer",
+   "args": [
+    "62816",
+    "14162",
+    "5294",
+    "54194"
+   ],
+   "expect": "The layer of 62816 mm by 14162 mm with boxes of 5294 mm by 54194 mm holds 2 boxes in the better orientation."
+  },
+  {
+   "fn": "layer",
+   "args": [
+    "74064",
+    "76282",
+    "42210",
+    "19711"
+   ],
+   "expect": "The layer of 74064 mm by 76282 mm with boxes of 42210 mm by 19711 mm holds 3 boxes in the better orientation."
+  },
+  {
+   "fn": "layer",
+   "args": [
+    "52251",
+    "81496",
+    "20878",
+    "22469"
+   ],
+   "expect": "The layer of 52251 mm by 81496 mm with boxes of 20878 mm by 22469 mm holds 6 boxes in the better orientation."
+  },
+  {
+   "fn": "layer",
+   "args": [
+    "73550",
+    "96118",
+    "35812",
+    "12663"
+   ],
+   "expect": "The layer of 73550 mm by 96118 mm with boxes of 35812 mm by 12663 mm holds 14 boxes in the better orientation."
+  },
+  {
+   "fn": "layer",
+   "args": [
+    "70218",
+    "85504",
+    "20290",
+    "24725"
+   ],
+   "expect": "The layer of 70218 mm by 85504 mm with boxes of 20290 mm by 24725 mm holds 9 boxes in the better orientation."
+  },
+  {
+   "fn": "layer",
+   "args": [
+    "54875",
+    "65601",
+    "54327",
+    "50019"
+   ],
+   "expect": "The layer of 54875 mm by 65601 mm with boxes of 54327 mm by 50019 mm holds 1 boxes in the better orientation."
+  },
+  {
+   "fn": "layer",
+   "args": [
+    "86007",
+    "30442",
+    "30397",
+    "56983"
+   ],
+   "expect": "The layer of 86007 mm by 30442 mm with boxes of 30397 mm by 56983 mm holds 1 boxes in the better orientation."
+  },
+  {
+   "fn": "layer",
+   "args": [
+    "64232",
+    "81916",
+    "69629",
+    "890"
+   ],
+   "expect": "The layer of 64232 mm by 81916 mm with boxes of 69629 mm by 890 mm holds 72 boxes in the better orientation."
+  },
+  {
+   "fn": "layers",
+   "args": [
+    "99733",
+    "99510"
+   ],
+   "expect": "The stack of 99733 mm over boxes of 99510 mm tall takes 1 layers."
+  },
+  {
+   "fn": "layers",
+   "args": [
+    "61630",
+    "60800"
+   ],
+   "expect": "The stack of 61630 mm over boxes of 60800 mm tall takes 1 layers."
+  },
+  {
+   "fn": "layers",
+   "args": [
+    "15463",
+    "14270"
+   ],
+   "expect": "The stack of 15463 mm over boxes of 14270 mm tall takes 1 layers."
+  },
+  {
+   "fn": "layers",
+   "args": [
+    "35903",
+    "12354"
+   ],
+   "expect": "The stack of 35903 mm over boxes of 12354 mm tall takes 2 layers."
+  },
+  {
+   "fn": "layers",
+   "args": [
+    "28229",
+    "28114"
+   ],
+   "expect": "The stack of 28229 mm over boxes of 28114 mm tall takes 1 layers."
+  },
+  {
+   "fn": "layers",
+   "args": [
+    "61586",
+    "58713"
+   ],
+   "expect": "The stack of 61586 mm over boxes of 58713 mm tall takes 1 layers."
+  },
+  {
+   "fn": "layers",
+   "args": [
+    "28730",
+    "23249"
+   ],
+   "expect": "The stack of 28730 mm over boxes of 23249 mm tall takes 1 layers."
+  },
+  {
+   "fn": "layers",
+   "args": [
+    "90724",
+    "83492"
+   ],
+   "expect": "The stack of 90724 mm over boxes of 83492 mm tall takes 1 layers."
+  },
+  {
+   "fn": "layers",
+   "args": [
+    "76157",
+    "45634"
+   ],
+   "expect": "The stack of 76157 mm over boxes of 45634 mm tall takes 1 layers."
+  },
+  {
+   "fn": "layers",
+   "args": [
+    "87747",
+    "82602"
+   ],
+   "expect": "The stack of 87747 mm over boxes of 82602 mm tall takes 1 layers."
+  },
+  {
+   "fn": "layers",
+   "args": [
+    "69322",
+    "35550"
+   ],
+   "expect": "The stack of 69322 mm over boxes of 35550 mm tall takes 1 layers."
+  },
+  {
+   "fn": "layers",
+   "args": [
+    "94257",
+    "90503"
+   ],
+   "expect": "The stack of 94257 mm over boxes of 90503 mm tall takes 1 layers."
+  },
+  {
+   "fn": "layers",
+   "args": [
+    "76679",
+    "76485"
+   ],
+   "expect": "The stack of 76679 mm over boxes of 76485 mm tall takes 1 layers."
+  },
+  {
+   "fn": "layers",
+   "args": [
+    "76330",
+    "50198"
+   ],
+   "expect": "The stack of 76330 mm over boxes of 50198 mm tall takes 1 layers."
+  },
+  {
+   "fn": "layers",
+   "args": [
+    "61754",
+    "56278"
+   ],
+   "expect": "The stack of 61754 mm over boxes of 56278 mm tall takes 1 layers."
+  },
+  {
+   "fn": "layers",
+   "args": [
+    "67202",
+    "66336"
+   ],
+   "expect": "The stack of 67202 mm over boxes of 66336 mm tall takes 1 layers."
+  },
+  {
+   "fn": "layers",
+   "args": [
+    "73469",
+    "24319"
+   ],
+   "expect": "The stack of 73469 mm over boxes of 24319 mm tall takes 3 layers."
+  },
+  {
+   "fn": "layers",
+   "args": [
+    "92322",
+    "92019"
+   ],
+   "expect": "The stack of 92322 mm over boxes of 92019 mm tall takes 1 layers."
+  },
+  {
+   "fn": "layers",
+   "args": [
+    "94738",
+    "33728"
+   ],
+   "expect": "The stack of 94738 mm over boxes of 33728 mm tall takes 2 layers."
+  },
+  {
+   "fn": "layers",
+   "args": [
+    "97553",
+    "68499"
+   ],
+   "expect": "The stack of 97553 mm over boxes of 68499 mm tall takes 1 layers."
+  },
+  {
+   "fn": "layers",
+   "args": [
+    "67161",
+    "29085"
+   ],
+   "expect": "The stack of 67161 mm over boxes of 29085 mm tall takes 2 layers."
+  },
+  {
+   "fn": "layers",
+   "args": [
+    "82192",
+    "57688"
+   ],
+   "expect": "The stack of 82192 mm over boxes of 57688 mm tall takes 1 layers."
+  },
+  {
+   "fn": "layers",
+   "args": [
+    "76292",
+    "29250"
+   ],
+   "expect": "The stack of 76292 mm over boxes of 29250 mm tall takes 2 layers."
+  },
+  {
+   "fn": "layers",
+   "args": [
+    "52960",
+    "17868"
+   ],
+   "expect": "The stack of 52960 mm over boxes of 17868 mm tall takes 2 layers."
+  },
+  {
+   "fn": "layers",
+   "args": [
+    "84762",
+    "81289"
+   ],
+   "expect": "The stack of 84762 mm over boxes of 81289 mm tall takes 1 layers."
+  },
+  {
+   "fn": "total",
+   "args": [
+    "14419",
+    "40478"
+   ],
+   "expect": "The pallet of 14419 boxes per layer over 40478 layers holds 583652282 boxes."
+  },
+  {
+   "fn": "total",
+   "args": [
+    "814",
+    "77173"
+   ],
+   "expect": "The pallet of 814 boxes per layer over 77173 layers holds 62818822 boxes."
+  },
+  {
+   "fn": "total",
+   "args": [
+    "91911",
+    "89346"
+   ],
+   "expect": "The pallet of 91911 boxes per layer over 89346 layers holds 8211880206 boxes."
+  },
+  {
+   "fn": "total",
+   "args": [
+    "3479",
+    "51180"
+   ],
+   "expect": "The pallet of 3479 boxes per layer over 51180 layers holds 178055220 boxes."
+  },
+  {
+   "fn": "total",
+   "args": [
+    "95608",
+    "31145"
+   ],
+   "expect": "The pallet of 95608 boxes per layer over 31145 layers holds 2977711160 boxes."
+  },
+  {
+   "fn": "total",
+   "args": [
+    "20965",
+    "26481"
+   ],
+   "expect": "The pallet of 20965 boxes per layer over 26481 layers holds 555174165 boxes."
+  },
+  {
+   "fn": "total",
+   "args": [
+    "5827",
+    "6847"
+   ],
+   "expect": "The pallet of 5827 boxes per layer over 6847 layers holds 39897469 boxes."
+  },
+  {
+   "fn": "total",
+   "args": [
+    "52720",
+    "41823"
+   ],
+   "expect": "The pallet of 52720 boxes per layer over 41823 layers holds 2204908560 boxes."
+  },
+  {
+   "fn": "total",
+   "args": [
+    "88627",
+    "69153"
+   ],
+   "expect": "The pallet of 88627 boxes per layer over 69153 layers holds 6128822931 boxes."
+  },
+  {
+   "fn": "total",
+   "args": [
+    "14732",
+    "92951"
+   ],
+   "expect": "The pallet of 14732 boxes per layer over 92951 layers holds 1369354132 boxes."
+  },
+  {
+   "fn": "total",
+   "args": [
+    "9404",
+    "56181"
+   ],
+   "expect": "The pallet of 9404 boxes per layer over 56181 layers holds 528326124 boxes."
+  },
+  {
+   "fn": "total",
+   "args": [
+    "5956",
+    "65730"
+   ],
+   "expect": "The pallet of 5956 boxes per layer over 65730 layers holds 391487880 boxes."
+  },
+  {
+   "fn": "total",
+   "args": [
+    "52147",
+    "24169"
+   ],
+   "expect": "The pallet of 52147 boxes per layer over 24169 layers holds 1260340843 boxes."
+  },
+  {
+   "fn": "total",
+   "args": [
+    "24229",
+    "81301"
+   ],
+   "expect": "The pallet of 24229 boxes per layer over 81301 layers holds 1969841929 boxes."
+  },
+  {
+   "fn": "total",
+   "args": [
+    "17960",
+    "48825"
+   ],
+   "expect": "The pallet of 17960 boxes per layer over 48825 layers holds 876897000 boxes."
+  },
+  {
+   "fn": "total",
+   "args": [
+    "34281",
+    "62097"
+   ],
+   "expect": "The pallet of 34281 boxes per layer over 62097 layers holds 2128747257 boxes."
+  },
+  {
+   "fn": "total",
+   "args": [
+    "98671",
+    "84508"
+   ],
+   "expect": "The pallet of 98671 boxes per layer over 84508 layers holds 8338488868 boxes."
+  },
+  {
+   "fn": "total",
+   "args": [
+    "9000",
+    "66593"
+   ],
+   "expect": "The pallet of 9000 boxes per layer over 66593 layers holds 599337000 boxes."
+  },
+  {
+   "fn": "total",
+   "args": [
+    "31345",
+    "36471"
+   ],
+   "expect": "The pallet of 31345 boxes per layer over 36471 layers holds 1143183495 boxes."
+  },
+  {
+   "fn": "total",
+   "args": [
+    "85300",
+    "34259"
+   ],
+   "expect": "The pallet of 85300 boxes per layer over 34259 layers holds 2922292700 boxes."
+  },
+  {
+   "fn": "weight",
+   "args": [
+    "92796",
+    "3287.19"
+   ],
+   "expect": "The load of 92796 boxes at 3287.19 kg each weighs 305038083.24 kg."
+  },
+  {
+   "fn": "weight",
+   "args": [
+    "79886",
+    "2103.06"
+   ],
+   "expect": "The load of 79886 boxes at 2103.06 kg each weighs 168005051.16 kg."
+  },
+  {
+   "fn": "weight",
+   "args": [
+    "63998",
+    "3994.25"
+   ],
+   "expect": "The load of 63998 boxes at 3994.25 kg each weighs 255624011.5 kg."
+  },
+  {
+   "fn": "weight",
+   "args": [
+    "86689",
+    "5457.42"
+   ],
+   "expect": "The load of 86689 boxes at 5457.42 kg each weighs 473098282.38 kg."
+  },
+  {
+   "fn": "weight",
+   "args": [
+    "90061",
+    "2488.55"
+   ],
+   "expect": "The load of 90061 boxes at 2488.55 kg each weighs 224121301.55 kg."
+  },
+  {
+   "fn": "weight",
+   "args": [
+    "42037",
+    "8346.53"
+   ],
+   "expect": "The load of 42037 boxes at 8346.53 kg each weighs 350863081.61 kg."
+  },
+  {
+   "fn": "weight",
+   "args": [
+    "23310",
+    "9941.65"
+   ],
+   "expect": "The load of 23310 boxes at 9941.65 kg each weighs 231739861.5 kg."
+  },
+  {
+   "fn": "weight",
+   "args": [
+    "9208",
+    "520.31"
+   ],
+   "expect": "The load of 9208 boxes at 520.31 kg each weighs 4791014.48 kg."
+  },
+  {
+   "fn": "weight",
+   "args": [
+    "59631",
+    "6097.58"
+   ],
+   "expect": "The load of 59631 boxes at 6097.58 kg each weighs 363604792.98 kg."
+  },
+  {
+   "fn": "weight",
+   "args": [
+    "38612",
+    "5263.69"
+   ],
+   "expect": "The load of 38612 boxes at 5263.69 kg each weighs 203241598.28 kg."
+  },
+  {
+   "fn": "weight",
+   "args": [
+    "78401",
+    "9458.42"
+   ],
+   "expect": "The load of 78401 boxes at 9458.42 kg each weighs 741549586.42 kg."
+  },
+  {
+   "fn": "weight",
+   "args": [
+    "88630",
+    "7224.53"
+   ],
+   "expect": "The load of 88630 boxes at 7224.53 kg each weighs 640310093.9 kg."
+  },
+  {
+   "fn": "weight",
+   "args": [
+    "86296",
+    "3879.3"
+   ],
+   "expect": "The load of 86296 boxes at 3879.3 kg each weighs 334768072.8 kg."
+  },
+  {
+   "fn": "weight",
+   "args": [
+    "5905",
+    "5861.47"
+   ],
+   "expect": "The load of 5905 boxes at 5861.47 kg each weighs 34611980.35 kg."
+  },
+  {
+   "fn": "weight",
+   "args": [
+    "41323",
+    "4717.96"
+   ],
+   "expect": "The load of 41323 boxes at 4717.96 kg each weighs 194960261.08 kg."
+  },
+  {
+   "fn": "weight",
+   "args": [
+    "30112",
+    "6551.88"
+   ],
+   "expect": "The load of 30112 boxes at 6551.88 kg each weighs 197290210.56 kg."
+  },
+  {
+   "fn": "weight",
+   "args": [
+    "61255",
+    "3449.59"
+   ],
+   "expect": "The load of 61255 boxes at 3449.59 kg each weighs 211304635.45 kg."
+  },
+  {
+   "fn": "weight",
+   "args": [
+    "91189",
+    "4963.56"
+   ],
+   "expect": "The load of 91189 boxes at 4963.56 kg each weighs 452622072.84 kg."
+  },
+  {
+   "fn": "weight",
+   "args": [
+    "73265",
+    "5713.49"
+   ],
+   "expect": "The load of 73265 boxes at 5713.49 kg each weighs 418598844.85 kg."
+  },
+  {
+   "fn": "weight",
+   "args": [
+    "50856",
+    "4483.69"
+   ],
+   "expect": "The load of 50856 boxes at 4483.69 kg each weighs 228022538.64 kg."
+  }
+ ],
+ "errors": [
+  [
+   "layer",
+   [
+    "0",
+    "1000",
+    "500",
+    "400"
+   ]
+  ],
+  [
+   "layer",
+   [
+    "1200",
+    "1000",
+    "0",
+    "400"
+   ]
+  ],
+  [
+   "layer",
+   [
+    "1200",
+    "1000",
+    "500",
+    "400.5"
+   ]
+  ],
+  [
+   "layer",
+   [
+    "120",
+    "100",
+    "500",
+    "400"
+   ]
+  ],
+  [
+   "layers",
+   [
+    "0",
+    "300"
+   ]
+  ],
+  [
+   "layers",
+   [
+    "1800",
+    "0"
+   ]
+  ],
+  [
+   "layers",
+   [
+    "180",
+    "300"
+   ]
+  ],
+  [
+   "total",
+   [
+    "0",
+    "6"
+   ]
+  ],
+  [
+   "total",
+   [
+    "6",
+    "1.5"
+   ]
+  ],
+  [
+   "weight",
+   [
+    "0",
+    "12.5"
+   ]
+  ],
+  [
+   "weight",
+   [
+    "36",
+    "0"
+   ]
+  ],
+  [
+   "weight",
+   [
+    "36",
+    "10000.01"
+   ]
+  ]
+ ]
+}
